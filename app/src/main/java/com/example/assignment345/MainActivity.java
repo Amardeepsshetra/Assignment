@@ -7,36 +7,56 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.SeekBar;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    EditText etOne;
-    SeekBar sbsyst;
+    EditText et1,et2;
+    Spinner spinner;
+    SeekBar sBar;
+    TextView tView;
+    RadioButton rb1,rb2,rb3;
+    Button calculate,submitOrder;
+    CheckBox confirmOrder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Handler seekBarHandler = new Handler();
-         sbsyst = (SeekBar) findViewById(R.id.seekBar);
-        sbsyst.setMax(0);
-        sbsyst.setMax(10);
-
-        etOne = (EditText) findViewById(R.id.editText);
-
-        etOne.addTextChangedListener(new TextWatcher() {
-            public void afterTextChanged(Editable s) {
-                int i = Integer.parseInt(s.toString());
-                if (i >= 0 && i <= 10) {
-                    sbsyst.setProgress( i - 0); // This ensures 0-120 value for seekbar
-                }
+        sBar = (SeekBar) findViewById(R.id.seekBar1);
+        tView = (TextView) findViewById(R.id.textview1);
+        tView.setText(sBar.getProgress() + "/" + sBar.getMax());
+        sBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            int pval = 0;
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                pval = progress;
             }
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-
-            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                //write custom code to on start progress
+            }
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                tView.setText(pval + "/" + seekBar.getMax());
+            }
         });
+
+
     }
 
 
+    public void submitOrder(View view) {
+
+    }
+
+    public void calculate(View view) {
+
+    }
 }
