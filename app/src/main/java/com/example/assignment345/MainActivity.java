@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 }else if(spinner.getSelectedItem().toString().equals("Egg Maggi")){
                     et1.setText("30");
                 }else if(spinner.getSelectedItem().toString().equals("Veggie Thali")){
-                    et1.setText("20");
+                    et1.setText("80");
                 }else if(spinner.getSelectedItem().toString().equals("Chilli Paneer")){
                     et1.setText("35");
                 }else if(spinner.getSelectedItem().toString().equals("Chilli Chicken")){
