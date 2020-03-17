@@ -36,7 +36,6 @@
         android:id="@+id/meals"
         android:layout_width="307dp"
         android:layout_height="34dp"
-        android:entries="@array/Meals"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.23"
@@ -59,14 +58,14 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="183dp"
-        android:layout_height="34dp"
+        android:layout_width="214dp"
+        android:layout_height="61dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintVertical_bias="0.197" />
 
     <TextView
         android:id="@+id/textView3"

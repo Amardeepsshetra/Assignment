@@ -1,15 +1,5 @@
 <resources>
     <string name="app_name">Assignment345</string>
-    <string-array name="Meals">
-        <item>Egg Maggi</item>
-        <item>Chicken Chowmein</item>
-        <item>Singapori Chowmein</item>
-        <item>Pav Bhaji</item>
-        <item>Chole Bhature</item>
-        <item>Masala Maggi</item>
-        <item>Aloo Parantha</item>
-        <item>Gobi Parantha</item>
-        <item>Paneer Parantha</item>
-        <item>Chicken Parantha</item>
-    </string-array>
+
+
 </resources>
