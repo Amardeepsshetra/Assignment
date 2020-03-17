@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton rb1,rb2,rb3;
     Button calculate1,submitOrder1;
     CheckBox confirmOrder;
+    int pval = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -122,6 +123,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calculate(View view) {
+    String price1 = et1.getText().toString();
+    int final_price = Integer.parseInt(price1);
+    int quantity = pval;
+    double tax = 0.13;
+    double tip = 0.0;
+
+    if(rb1.isChecked()){
+         tip = 0.10;
+    }else if(rb2.isChecked()){
+         tip = 0.15;
+    }else if(rb3.isChecked()){
+         tip = 0.20;
+    }
+
+    double price = ((final_price * quantity) + (tip * final_price));
+    double total_tax = price * tax;
+    double total_price = price + total_tax;
 
     }
+
 }
