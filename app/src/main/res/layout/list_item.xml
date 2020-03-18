@@ -8,60 +8,65 @@
 
     <TextView
         android:id="@+id/MealName"
-        android:layout_width="109dp"
-        android:layout_height="36dp"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/Tip"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.105" />
 
     <TextView
         android:id="@+id/Tip"
-        android:layout_width="110dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="640dp"
+        android:layout_width="120dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="564dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MealName"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/Price"
-        android:layout_width="119dp"
-        android:layout_height="35dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/Tax"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/Tax"
-        android:layout_width="119dp"
+        android:layout_width="126dp"
         android:layout_height="34dp"
-        android:layout_marginBottom="644dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <TextView
+        android:id="@+id/Tax"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="548dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Price"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/Quantity"
-        android:layout_width="108dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="107dp"
+        android:layout_height="36dp"
         android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintHorizontal_bias="0.911"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
 
     <TextView
         android:id="@+id/Cost"
@@ -70,7 +75,7 @@
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintHorizontal_bias="0.911"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Quantity"
         app:layout_constraintVertical_bias="0.0" />
